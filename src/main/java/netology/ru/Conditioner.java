@@ -59,16 +59,16 @@ public class Conditioner {
         if (this.currentTemperature >= this.maxTemperature) {
             return;
         }
-        this.currentTemperature ++;
-        }
+        this.currentTemperature++;
+    }
 
     public void decreaseCurrentTemperature() {
-        if (!isOn()){
+        if (!isOn()) {
             return;
         }
         if (currentTemperature <= minTemperature) {
             return;
         }
-        this.currentTemperature --;
+        this.currentTemperature--;
     }
 }
